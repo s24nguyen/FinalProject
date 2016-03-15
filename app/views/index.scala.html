@@ -11,10 +11,15 @@
  *@
 @main("Welcome to Play") {
 
-    @*
-     * Get an `Html` object by calling the built-in Play welcome
-     * template and passing a `String` message.
-     *@
-    @play20.welcome(message, style = "Java")
+  <h1>This is the main page</h1>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-3 col-sm-3">
+                <form name="input" action="navPage2" method="get">
+                    <button type="submit" class="btn btn-warning btn-lg">Go to page 2</button>
+                </form>
+            </div>
+        </div>
+    </div>
 }

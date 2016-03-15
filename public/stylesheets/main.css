@@ -1,0 +1,28 @@
+.registration{
+    background: #333333;
+    color: snow;
+}
+.registration .form-control{
+    background: lightgray;
+}
+
+.registration .row{
+    margin-bottom: 18px;
+}
+
+.registration .radButtons{
+    margin-top: 5px;
+}
+
+.btn-regSubmit{
+    background: #65EA6D;
+    color: black;
+    border-radius: 18px;
+    transition-duration: 0.8s;
+}
+
+.btn-regSubmit:hover{
+    color: snow;
+    background: #62488A;
+
+}
