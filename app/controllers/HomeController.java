@@ -15,6 +15,9 @@ public class HomeController extends Controller {
         return ok(registration.render("registration page"));
     }
 
+    public  Result about() {
+        return ok(about.render("about"));
+    }
 
     public Result index() {
         return ok(index.render("Your new application is ready."));
