@@ -1,3 +1,16 @@
+/*Global Styles*/
+html{
+    background-color: white;
+}
+
+a:hover{
+    color: red;
+}
+
+a:visited{
+    color: purple;
+}
+
 /*Registration Page*/
 .registration{
     background: #333333;
@@ -77,3 +90,13 @@
 
 
 /*End Registration Page*/
+
+/*Player Profile Page*/
+.pBackground{
+    background: lightblue;
+    border-bottom: solid gold 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+/*End Player Profile Page*/
+

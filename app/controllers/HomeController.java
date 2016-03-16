@@ -15,6 +15,8 @@ public class HomeController extends Controller {
         return ok(registration.render("registration page"));
     }
 
+    public Result playerProfile() {return ok(playerProfile.render("Player Profile Page"));}
+
 
     public Result index() {
         return ok(index.render("Your new application is ready."));
