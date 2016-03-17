@@ -2,10 +2,14 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# An example controller showing a sample home page
+# An example controller showing a sample index page
 GET     /                           controllers.HomeController.index
-GET     /navPage2                   controllers.HomeController.navPage2
+GET     /registration               controllers.HomeController.registration
+GET     /faq                        controllers.HomeController.faq
+GET     /playerProfile              controllers.HomeController.playerProfile
 GET     /about                      controllers.HomeController.about
+GET     /contactUs                  controllers.HomeController.contactUs
+GET     /home                       controllers.HomeController.home
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code

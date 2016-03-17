@@ -1,0 +1,51 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@*
+ * Call the the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Welcome to Play") {
+    <div>
+        <ul class="nav nav-pills nav-stacked col-sm-2 pill-back">
+            <li class="active"><a href="home">Home</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="playerProfile">Player Profiles</a></li>
+            <li><a href="contactUs">Contact</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="registration">Registration</a></li>
+        </ul>
+    </div>
+<div class="wideBackground">
+    <div class="container">
+        <div class="registration">
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-5">
+                    <h1>FAQ</h1>
+                </div>
+                <br>
+                <form class="form">
+                    <div class="row">
+                        <div class="col-sm-offset-3 col-sm-3">
+                            Q: Won’t separating players by state make the end results of the tournament biased?
+                            <br>
+                            A: No. Pools are already seeded by player skill. With each player in a pool being ranked 1 - n before hand. You are able to freely swap players between pools as long as you only have one of each rank in a pool. By doing this our system maintains the fairness of the tournament while allowing the TO to optimize the pools.
+                            <br>
+                            <br>
+                            Q: What if the algorithm doesn’t work? Will there be enough of a project besides the algorithm?
+                            <br>
+                            A: We already have an algorithm worked out and sample code written that proves the concept. Even without the algorithm, the product is feature rich and useful. There is a need for a tool that helps set up and manage a round-robin tournament, and this is that solution.
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+}

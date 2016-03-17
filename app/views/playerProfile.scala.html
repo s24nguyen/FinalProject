@@ -1,0 +1,73 @@
+@*
+* This template takes a single argument, a String containing a
+* message to display.
+*@
+@(message: String)
+
+@*
+* Call the the `main` template with two arguments. The first
+* argument is a `String` with the title of the page, the second
+* argument is an `Html` object containing the body of the page.
+*@
+@main("Welcome to Play") {
+  <div>
+    <ul class="nav nav-pills nav-stacked col-sm-2 pill-back">
+      <li class="active"><a href="home">Home</a></li>
+      <li><a href="about">About Us</a></li>
+      <li><a href="playerProfile">Player Profiles</a></li>
+      <li><a href="contactUs">Contact</a></li>
+      <li><a href="faq">FAQ</a></li>
+      <li><a href="registration">Registration</a></li>
+    </ul>
+  </div>
+  <div class="wideBackground">
+    <div class="pBackground">
+      <div class="container">
+          <!--Adds style color to "Player Profile"-->
+        <h2>Player Profile</h2>
+
+        <section class="row">
+            <!-- Fetches and displays the player profile image -->
+          <p class="col-md-3"><img src="/../../public/images/profile_1.jpg" width="250" height="150" alt="Player Profile Picture."></p>
+          <section class="col-md-6">
+            <b>Player:</b> Michael Jordan<br>
+            <b>DoB:</b> February 17, 1963<br>
+            <b>Location:</b> New York<br>
+            <b>Game:</b> Basketball-NBA<br>
+            <b>Nationality:</b> American<br>
+          </section>
+          <p class="col-md-3"><img src="/../../public/images/icon_1.jpg" width="175" height="112.5" alt="League Icon."></p>
+        </section>
+
+        <section>
+          <p><b>Player Bio:</b> <br></p>
+          <p>Michael Jeffrey Jordan (born February 17, 1963), also known by his initials, MJ, is an American former professional basketball player.
+            He is also a businessman, and principal owner and chairman of the Charlotte Hornets. Jordan played 15 seasons in the
+            National Basketball Association (NBA) for the Chicago Bulls and Washington Wizards. His biography on the
+            NBA website states: "By acclamation, Michael Jordan is the greatest basketball player of all time."Jordan was one of the most effectively marketed
+            athletes of his generation and was considered instrumental in popularizing the NBA around the world in the 1980s and 1990s.</p>
+
+          <p>Jordan played three seasons for coach Dean Smith at the University of North Carolina. He was a member of the Tar Heels'
+            national championship team in 1982. Jordan joined the NBA's Chicago Bulls in 1984 as the third overall draft pick.
+            He quickly emerged as a league star, entertaining crowds with his prolific scoring. His leaping ability,
+            illustrated by performing slam dunks from the free throw line in slam dunk contests,
+            earned him the nicknames "Air Jordan" and "His Airness". He also gained a reputation for being one of the best defensive players in basketball.
+            In 1991, he won his first NBA championship with the Bulls, and followed that achievement with titles in 1992 and 1993,
+            securing a "three-peat". Although Jordan abruptly retired from basketball before the beginning of the 1993–94 NBA season to pursue a career in baseball,
+            he returned to the Bulls in March 1995 and led them to three additional championships in 1996, 1997, and 1998, as well as an NBA-record 72 regular-season
+            wins in the 1995–96 NBA season. Jordan retired for a second time in January 1999, but returned for two more NBA seasons from 2001 to 2003 as a member of
+            the Wizards.</p>
+
+
+          <a href="https://en.wikipedia.org/wiki/Michael_Jordan" target="_blank">Wikipedia</a><br>
+          <a href="http://www.nba.com/history/players/jordan_stats.html" target="_blank">www.nba.com Stats</a>
+        </section>
+      </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </div>
+}
