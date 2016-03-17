@@ -15,6 +15,10 @@ public class HomeController extends Controller {
         return ok(registration.render("registration page"));
     }
 
+    public  Result faq()
+    {
+        return ok(faq.render("faq page"));
+    }
 
     public Result playerProfile() {return ok(playerProfile.render("Player Profile Page"));}
 

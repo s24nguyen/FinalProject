@@ -5,6 +5,7 @@
 # An example controller showing a sample index page
 GET     /                           controllers.HomeController.index
 GET     /registration               controllers.HomeController.registration
+GET     /faq                        controllers.HomeController.faq
 GET     /playerProfile              controllers.HomeController.playerProfile
 GET     /about                      controllers.HomeController.about
 GET     /home                       controllers.HomeController.home
