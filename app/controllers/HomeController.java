@@ -15,20 +15,21 @@ public class HomeController extends Controller {
         return ok(registration.render("registration page"));
     }
 
-    public  Result faq()
-    {
+    public  Result faq() {
         return ok(faq.render("faq page"));
     }
 
-    public Result playerProfile() {return ok(playerProfile.render("Player Profile Page"));}
+    public Result home() {
+        return ok(home.render("Home page"));
+    }
+
+    public Result playerProfile() {
+        return ok(playerProfile.render("Player Profile Page"));
+    }
 
 
     public  Result about() {
         return ok(about.render("about"));
-    }
-
-    public Result home() {
-        return ok(Home.render("Your new application is ready."));
     }
 
     public Result contactUs() { return ok(contactUs.render("Contact Us")); }
