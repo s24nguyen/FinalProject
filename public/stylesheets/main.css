@@ -33,6 +33,7 @@ ul.pill-back > li > a:hover, ul.pill-back > li > .active{
 .registration{
     background: #333333;
     color: snow;
+    margin:0 auto;
 }
 .registration .form-control{
     background: lightgray;
@@ -112,7 +113,7 @@ ul.pill-back > li > a:hover, ul.pill-back > li > .active{
 
 /*Player Profile Page*/
 .pBackground{
-    background: lightblue;
+    background: lightcyan;
     border-bottom: solid gold 20px;
     width: 70%;
     margin: 0 auto;
