@@ -4,7 +4,7 @@
 
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
-GET     /navPage2                   controllers.HomeController.navPage2
+GET     /Registration                  controllers.HomeController.Registration
 GET     /playerProfile              controllers.HomeController.playerProfile
 GET     /about                      controllers.HomeController.about
 # An example controller showing how to use dependency injection

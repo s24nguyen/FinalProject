@@ -11,7 +11,7 @@ import views.html.*;
  */
 public class HomeController extends Controller {
 
-    public  Result navPage2() {
+    public  Result Registration() {
         return ok(registration.render("registration page"));
     }
 

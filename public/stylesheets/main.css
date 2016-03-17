@@ -1,6 +1,6 @@
 /*Global Styles*/
 html{
-    background-color: white;
+    background-color: #333333;
 }
 
 a:hover{
@@ -8,8 +8,16 @@ a:hover{
 }
 
 a:visited{
-    color: purple;
+    color: #65EA6D;
 }
+
+.wideBackground{
+    background: #333333;
+}
+.mainText{
+    color: snow;
+}
+/* End Global Styles*/
 
 /*Registration Page*/
 .registration{
