@@ -24,7 +24,7 @@ public class HomeController extends Controller {
     }
 
     public Result home() {
-        return ok(home.render("Your new application is ready."));
+        return ok(Home.render("Your new application is ready."));
     }
 
     public Result index() {return ok(index.render("Your new application is ready"));}
