@@ -31,5 +31,7 @@ public class HomeController extends Controller {
         return ok(Home.render("Your new application is ready."));
     }
 
+    public Result contactUs() { return ok(contactUs.render("Contact Us")); }
+
     public Result index() {return ok(index.render("Your new application is ready"));}
 }

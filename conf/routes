@@ -8,6 +8,7 @@ GET     /registration               controllers.HomeController.registration
 GET     /faq                        controllers.HomeController.faq
 GET     /playerProfile              controllers.HomeController.playerProfile
 GET     /about                      controllers.HomeController.about
+GET     /contactUs                  controllers.HomeController.contactUs
 GET     /home                       controllers.HomeController.home
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
