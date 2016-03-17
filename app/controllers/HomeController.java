@@ -7,7 +7,7 @@ import views.html.*;
 
 /**
  * This controller contains an action to handle HTTP requests
- * to the application's home page.
+ * to the application's index page.
  */
 public class HomeController extends Controller {
 
@@ -27,4 +27,5 @@ public class HomeController extends Controller {
         return ok(home.render("Your new application is ready."));
     }
 
+    public Result index() {return ok(index.render("Your new application is ready"));}
 }

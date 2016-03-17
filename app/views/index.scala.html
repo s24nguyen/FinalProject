@@ -1,0 +1,29 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@*
+ * Call the the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Welcome to Play") {
+    <div class="wideBackground">
+        <div class="mainText">
+            <h1>This is the main page</h1>
+        </div>
+    </div>
+    <div>
+        <ul class="nav nav-pills nav-stacked col-sm-2 pill-back">
+            <li class="active"><a href="home">Home</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="playerProfile">Player Profiles</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQS</a></li>
+            <li><a href="registration">Registration</a></li>
+        </ul>
+    </div>
+
+}
