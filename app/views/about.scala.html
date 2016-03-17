@@ -11,63 +11,73 @@
 *@
 @main("Welcome to Play") {
 
-        <div class="registration">
+        <div class = registration>
             <div class="row">
-                <div class="col-sm-offset-3 col-sm-5">
-                    <h1>Mine is Different!</h1>
-                    <h1>Testing Branching</h1>
-                    <h6>Background Info!
-                        What are pools?
-                        Pools are a method of running a tournament where you separate players into different “pools” with each player versing every other player in their pool. So if you have 6 people in a pool they each play every other player, meaning each player plays 5 games total. The result of each game is tallied up to create a rank for each player. Running pools means players play more games in less amount of time. Pools are used in many tournaments from Basketball to Smash Brothers.
+                <div class="col-sm-offset-1">
+                    <h1>Background Info</h1>
+                    <h2>What are pools?</h2>
+                    <h4>
 
-                        How do pools work?
-                        Before being put into pools. Each player is given a “seed”. This seed is their rank by skill. With 1 being the best and higher being worse. If there are 5 pools, there will be 5 first seed players. This is because each pool will have one player of each seed. So a pool of 6 people will have a 1st seed, a 2nd seed, a 3rd seed, and so on. Because each pool has a one of each seed, you can swap same seeds between pools. So that means you can swap seed 2 from pool 1 and seed 2 from pool 5 without affecting the seeding.
+                        <div class="col-sm-7">Pools are a method of running a tournament where you separate players into different “pools” with each player versing every other player in their pool. So if you have 6 people in a pool they each play every other player, meaning each player plays 5 games total. The result of each game is tallied up to create a rank for each player. Running pools means players play more games in less amount of time. Pools are used in many tournaments from Basketball to Smash Brothers.
+                        </div>
 
-                        How pools are made now: Excel
-                        Problem: TOs have to set up the pools manually, deleting and entering entrants one by one in excel. They have nothing to help them set up the pools. They have no way to know which players come from where and shouldn’t be placed in the same pool. People who often play each other don’t want to play early on in a tournament.
+                       @*<div> <a><IMG SRC="http://img.photobucket.com/albums/v639/nicknyte/Meleesinglespool2.png"></a> </div>
+                        *@
 
-                        Example: Pool 13.
-                        Me (Dirtydeeds), Anther and Xplode are all in the same pool. We are all from Michigan. There are 16 pools and less than 16 entrants from Michigan. There’s no reason us three should be in the same pool, it’s no fun to go to a far away  tourney and play against the same people you always do 😢. If the TO had better tools, he might have seen this problem before he finalized the pools.
-                        Our Solution!
+                    </h4>
+                </div>
+                <br>
+            </div>
 
-                        Create a website that will give a TO the tools to efficiently and accurately manage a round robin tournament. The website will help TOs see what players come from where and what crews they belong to, and using that info help them set up pools in a way that is fair and fun for everyone!
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-10">
+                    <h2>How do pools work?</h2>
+                    <h4>
 
-                        Components/Features:
-
-                        Account Creation: Players will be able to create an account and specify their data, such as name, state, and what crews they might belong to. Patel will be going over this in class, and will therefore be one of the easiest parts to implement. The account could also be able to keep track of a player's wins/losses and what tournaments they have participated in if we wanted to implement that.
-
-                        Entering Players / Setting Groups: This is the interface where TO will be able to manually enter players or select ones that are already signup up and in the database. He will also be able to create groups (state, crew, etc). The groups are not limited, he can group them by any parameter he wishes. He will also be able to set how much weight eight group will have, meaning how important it is to avoid have that group in the same pool.
-
-                        Pool Optimization: This will be the algorithm that takes the list of entrants and the parameters and values set by the TO and optimizes it to minimize overlap of certain parameters. These parameters can be state/crew/height/age or anything the TO determines. This is a relatively small component of the project, and is only one tool the TO will have to help create and run pools.
-                        We have 2 algorithms. The Individual Placement algorithm which is easy and quick to compute. And the Row Optimization algorithm which is more complex but more thorough.
-
-                        Pool Management:  The TO will be able to view the pool and actively switch players between pools with a drag and drop interface. This view will show the TO the conflicts and give them an active updating conflict score for each pool as they make swaps. This will help them immensely in setting up the pools, since it gives them live information about what conflicts might arise. This means they don’t have to try to juggle all of that information in their head.
-
-                        Print Pools: Taking the pools that have been finalized and creating printouts for the players to fill out. A simple feature to implement.
-
-                        Pool Result Input: An input screen where the results of the pools are input. The players are then ranked based on results. This will be simple comparison math. Also a simple feature.
-
-                        Output Final Seeded List: Output a final seeded list of players based on how they did in pools. This list is for use in seeding a bracket. Our software won’t handle the bracket. There is already software that does brackets very well.
-
-                        How the database will be used
-
-                        The database will be used appropriately for the scope of the class project. Beyond just user account creation, the pools will need to be held in the database. As will the pool results. The TO needs to be able to access and change the pools over many days, meaning it needs to be stored long term in the database. The pools and the pool results can also be searchable.
-
-                        Search: Users will be able to search published pools by different parameters, this will search the database for entries that match their search. The search can be customized to search for different things, such as finding every pool a player has been in and their results, or every pool that has players from MI. This will use the database heavily, and tie in well to the lessons we learn during patel’s lectures.
-                        Feasibility
-                        Implementable: It will be very easy for our group to implement the desired features and finish the project on time. They tools and components interact in a limited capacity, they all basically transform the pools in some way or gather information from the pools. For the purpose of development each component will be able to use temporary data to build off of.
-
-                        Limited scope and clear goal: An advantage of this project is that the scope is well defined, the software has a goal it is trying to reach and a problem it is trying to solve. Everything we implement will be to help solve that problem. Compare this to a more open ended project, where deciding exactly what the system is supposed to do can get complicated.
-
-                        Domain Expertise: One of our groupmates knows the domain very well, and knows better experts to contact with questions. We have the advantage of being able to send out a prototype and receiving feedback from people who would actually use it.
-                        FAQs
-                        Q: Won’t separating players by state make the end results of the tournament biased?
-                        A: No. Pools are already seeded by player skill. With each player in a pool being ranked 1 - n before hand. You are able to freely swap players between pools as long as you only have one of each rank in a pool. By doing this our system maintains the fairness of the tournament while allowing the TO to optimize the pools.
+                        <div class="col-sm-7"> Before being put into pools. Each player is given a “seed”. This seed is their rank by skill. With 1 being the best and higher being worse. If there are 5 pools, there will be 5 first seed players. This is because each pool will have one player of each seed. So a pool of 6 people will have a 1st seed, a 2nd seed, a 3rd seed, and so on. Because each pool has a one of each seed, you can swap same seeds between pools. So that means you can swap seed 2 from pool 1 and seed 2 from pool 5 without affecting the seeding.
+                        </div>
 
 
-                        Q: What if the algorithm doesn’t work? Will there be enough of a project besides the algorithm?
-                        A: We already have an algorithm worked out and sample code written that proves the concept. Even without the algorithm, the product is feature rich and useful. There is a need for a tool that helps set up and manage a round-robin tournament, and this is that solution.
-                    </h6>
+                    </h4>
+                </div>
+                <br>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-10">
+                    <h2>How pools are made now: Excel</h2>
+                    <h4>
+                        <div class="col-sm-7"><b>Problem:</b> TOs have to set up the pools manually, deleting and entering entrants one by one in excel. They have nothing to help them set up the pools. They have no way to know which players come from where and shouldn’t be placed in the same pool. People who often play each other don’t want to play early on in a tournament.
+
+                        </div>
+
+                    </h4>
+                </div>
+                <br>
+            </div>
+            <div class="col-sm-offset-1"><h1>Our Solution!</h1></div>
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-10">
+                    <h2>Components/Features:</h2>
+                    <h4>
+                        <div class="col-sm-7">
+                            <b>Account Creation:</b>Players will be able to create an account and specify their data, such as name, state, and what crews they might belong to. Patel will be going over this in class, and will therefore be one of the easiest parts to implement. The account could also be able to keep track of a player's wins/losses and what tournaments they have participated in if we wanted to implement that.
+                            <br><br>
+                            <b>Entering Players / Setting Groups: </b>This is the interface where TO will be able to manually enter players or select ones that are already signup up and in the database. He will also be able to create groups (state, crew, etc). The groups are not limited, he can group them by any parameter he wishes. He will also be able to set how much weight eight group will have, meaning how important it is to avoid have that group in the same pool.
+                            <br><br>
+                            <b>Pool Optimization:</b>This will be the algorithm that takes the list of entrants and the parameters and values set by the TO and optimizes it to minimize overlap of certain parameters. These parameters can be state/crew/height/age or anything the TO determines. This is a relatively small component of the project, and is only one tool the TO will have to help create and run pools.
+                            <br><br>
+                            <b>Pool Management:</b>The TO will be able to view the pool and actively switch players between pools with a drag and drop interface. This view will show the TO the conflicts and give them an active updating conflict score for each pool as they make swaps. This will help them immensely in setting up the pools, since it gives them live information about what conflicts might arise. This means they don’t have to try to juggle all of that information in their head.
+                            <br><br>
+                            <b>Print Pools:</b>Taking the pools that have been finalized and creating printouts for the players to fill out. A simple feature to implement.
+                            <br><br>
+                            <b>Pool Result Input:</b>An input screen where the results of the pools are input. The players are then ranked based on results. This will be simple comparison math. Also a simple feature.
+                            <br><br>
+                            <b>Output Final Seeded List:</b>Output a final seeded list of players based on how they did in pools. This list is for use in seeding a bracket. Our software won’t handle the bracket. There is already software that does brackets very well.
+
+                        </div>
+
+                    </h4>
                 </div>
                 <br>
             </div>
