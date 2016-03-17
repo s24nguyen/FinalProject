@@ -11,7 +11,7 @@ import views.html.*;
  */
 public class HomeController extends Controller {
 
-    public  Result Registration() {
+    public  Result registration() {
         return ok(registration.render("registration page"));
     }
 
@@ -23,8 +23,8 @@ public class HomeController extends Controller {
         return ok(about.render("about"));
     }
 
-    public Result index() {
-        return ok(index.render("Your new application is ready."));
+    public Result home() {
+        return ok(home.render("Your new application is ready."));
     }
 
 }

@@ -10,6 +10,16 @@
  * argument is an `Html` object containing the body of the page.
  *@
 @main("Welcome to Play") {
+    <div>
+        <ul class="nav nav-pills pill-back nav-stacked col-sm-2">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="playerProfile">Player Profiles</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQS</a></li>
+            <li class="active"><a href="registration">Registration</a></li>
+        </ul>
+    </div>
 <div class="wideBackground">
     <div class="container">
         <div class="registration">
@@ -202,11 +212,11 @@
 
                     <div class="row">
                         <div class="col-sm-offset-3 col-sm-3">
-                            <button type="submit" class="btn hvr-shutter-out-horizontal col-sm-12" name="submit" id="button-submit">Submit</button>
+                            <button type="submit" class="btn btn-shutterOut col-sm-12" name="submit" id="button-submit">Submit</button>
                         </div>
 
                         <div class="col-sm-3">
-                            <button type="submit" class="btn hvr-shutter-out-horizontal col-sm-12" name="cancel" id="button-cancel">Cancel</button>
+                            <button type="submit" class="btn btn-shutterOut col-sm-12" name="cancel" id="button-cancel">Cancel</button>
                         </div>
                     </div>
 
