@@ -1,0 +1,24 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@*
+ * Call the the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Welcome to Play") {
+
+    @index("")
+
+    <div class="container">
+        <div class="home">
+            <div class="jumbotron">
+                <h1>Welcome!</h1>
+                <p>...to Round Robin. If you're new, try our <a href="/about">about</a> page. Otherwise, you can check out <a href="/registration">registration</a> or our <a href="/playerProfile">player profiles</a>. If you have any questions, please consult our <a href="/faq">FAQ</a> first.</p>
+            </div>
+        </div>
+    </div>
+}
