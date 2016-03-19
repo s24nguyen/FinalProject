@@ -131,7 +131,7 @@ ul.pill-back > li > a:hover, ul.pill-back > li > .active{
 }
 
 #contactInfo {
-
+    overflow: auto;
     width: 600px;
     margin: 2em auto;
 }
