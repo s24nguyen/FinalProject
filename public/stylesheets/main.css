@@ -27,13 +27,17 @@ ul.pill-back > li > a:hover, ul.pill-back > li > .active{
     color: snow
 }
 
+.header{
+    color: #65EA6D;
+}
+
 /* End Global Styles*/
 
 /*Registration Page*/
 .registration{
     background: #333333;
     color: snow;
-    margin:0 auto;
+
 }
 .registration .form-control{
     background: lightgray;
@@ -127,7 +131,7 @@ ul.pill-back > li > a:hover, ul.pill-back > li > .active{
 }
 
 #contactInfo {
-    overflow:auto;
+
     width: 600px;
     margin: 2em auto;
 }

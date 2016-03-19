@@ -1,40 +1,49 @@
 @(message: String)
 
 @main("Contact Us") {
-  @index("")
   <div class="wideBackground">
-    <div class="container">
-      <div class="contact">
-        <div class="col-sm-offset-4 col-sm-5">
-          <h1>Contact Us</h1>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="col-sm-2">
+        @index("")
         </div>
-        <br>
+        <div class="col-sm-10">
+          <div class="container">
+            <div class="contact">
+              <div class="col-sm-offset-4 col-sm-5">
+                <h1>Contact Us</h1>
+              </div>
+              <br>
 
-        <div id="contactInfo"> 
-          <div id="disclaimer">
-            <p>Before contacting us with questions, please check
-              FAQs, located on the sidebar.  Many questions have
-              already been answered there.</p>
-          </div>
-          <div id="leftInfo">     
-            <div id="phone">
-              <p><b><span style="color:#62488A">Contact By Phone</span></b></p>
-              <p>I'm not sure if this is a good idea,
-                but I decided to leave this section here
-                as a placeholder</p>
-            </div>     
-          </div> 
-          <div id="rightInfo">     
-            <div id="email">
-              <p><b><span style="color:#62488A">Contact By E-mail</span></b><br></p>
-              <p>Please e-mail your question, comments,
-                or suggestions to: <br>
-                eahoggar&#64oakland.edu <br>
-                ...</p>
-            </div>     
+              <div id="contactInfo"> 
+                <div id="disclaimer">
+                  <p>Before contacting us with questions, please check
+                    FAQs, located on the sidebar.  Many questions have
+                    already been answered there.</p>
+                </div>
+                <div id="leftInfo">     
+                  <div id="phone">
+                    <p><b><span style="color:#62488A">Contact By Phone</span></b></p>
+                    <p>I'm not sure if this is a good idea,
+                      but I decided to leave this section here
+                      as a placeholder</p>
+                  </div>     
+                </div> 
+                <div id="rightInfo">     
+                  <div id="email">
+                    <p><b><span style="color:#62488A">Contact By E-mail</span></b><br></p>
+                    <p>Please e-mail your question, comments,
+                      or suggestions to: <br>
+                      eahoggar&#64oakland.edu <br>
+                      ...</p>
+                  </div>     
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 }

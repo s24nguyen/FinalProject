@@ -3,7 +3,7 @@
 # ~~~~
 
 # An example controller showing a sample index page
-GET     /                           controllers.HomeController.index
+GET     /                           controllers.HomeController.home
 GET     /registration               controllers.HomeController.registration
 GET     /faq                        controllers.HomeController.faq
 GET     /playerProfile              controllers.HomeController.playerProfile
