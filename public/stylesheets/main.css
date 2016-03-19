@@ -6,6 +6,9 @@ html{
 a:hover{
     color: red;
 }
+a{
+    color: #65EA6D !important;
+}
 
 a:visited{
     color: #65EA6D;
@@ -24,7 +27,68 @@ a:visited{
 }
 ul.pill-back > li > a:hover, ul.pill-back > li > .active{
     background-color: #62488A;
-    color: snow
+    color: snow !important;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    background: #62488A;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+/* Ripple Out */
+@-webkit-keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+
+@keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+
+.hvr-ripple-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+.hvr-ripple-out:before {
+    content: '';
+    position: absolute;
+    border: #5F5F5F solid 6px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+    -webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out;
 }
 
 .header{
@@ -117,10 +181,12 @@ ul.pill-back > li > a:hover, ul.pill-back > li > .active{
 
 /*Player Profile Page*/
 .pBackground{
-    background: lightcyan;
+    background: #5F5F5F;
     border-bottom: solid gold 20px;
     width: 70%;
     margin: 0 auto;
+    color: gainsboro;
+
 }
 /*End Player Profile Page*/
 
@@ -129,11 +195,17 @@ ul.pill-back > li > a:hover, ul.pill-back > li > .active{
     background: #333333;
     color: snow;
 }
+.contactHeader{
+    margin-left: 35px;
+    color: #65EA6D;
+}
+
 
 #contactInfo {
     overflow: auto;
     width: 600px;
     margin: 2em auto;
+
 }
 
 #leftInfo, #rightInfo {
@@ -147,15 +219,19 @@ ul.pill-back > li > a:hover, ul.pill-back > li > .active{
 #leftInfo {
     float:left;
 }
-#rightInfo {   float:right;
+#rightInfo {
+    float:right;
 }
 
 #disclaimer {
     overflow: auto;
-    width: 450px;
-    margin: 2em auto;
+
     text-align: center;
 }
 
 /*End Contact Us Page*/
 
+.jumbotron{
+    background-color: #5F5F5F !important;
+    color: snow !important;
+}
