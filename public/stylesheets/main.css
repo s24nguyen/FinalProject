@@ -1,6 +1,7 @@
 /*Global Styles*/
 html{
     background-color: #333333;
+    padding-top: 30px;
 }
 
 a:hover{
@@ -24,6 +25,11 @@ a:visited{
 .tempSpacing{
     margin-right: 5em;
     margin-left: 2em;
+}
+
+.nav{
+    position: fixed;
+    margin-top: 15px;
 }
 ul.pill-back > li > a:hover, ul.pill-back > li > .active{
     background-color: #62488A;
@@ -196,7 +202,7 @@ ul.pill-back > li > a:hover, ul.pill-back > li > .active{
     color: snow;
 }
 .contactHeader{
-    margin-left: 35px;
+    margin-left: 60px;
     color: #65EA6D;
 }
 
@@ -235,3 +241,6 @@ ul.pill-back > li > a:hover, ul.pill-back > li > .active{
     background-color: #5F5F5F !important;
     color: snow !important;
 }
+
+
+
