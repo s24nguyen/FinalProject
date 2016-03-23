@@ -186,13 +186,14 @@ ul.pill-back > li > a:hover, ul.pill-back > li > .active{
 /*End Registration Page*/
 
 /*Player Profile Page*/
-.pBackground{
+.pBackground {
     background: #5F5F5F;
     border-bottom: solid gold 20px;
-    width: 70%;
     margin: 0 auto;
     color: gainsboro;
-
+}
+.pBackground .header{
+    margin:0 auto;
 }
 /*End Player Profile Page*/
 
