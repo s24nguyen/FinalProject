@@ -194,7 +194,14 @@ ul.pill-back > li > a:hover, ul.pill-back > li > .active{
 }
 .pBackground .header{
     margin:0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+.pBackground a:visited{
+    color: purple;
+} /*There is come conflict with global font colors*/
+
 /*End Player Profile Page*/
 
 /*Contact Us Page*/
