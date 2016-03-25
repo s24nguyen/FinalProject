@@ -34,10 +34,34 @@
                 </ul>
                 <ul class="nav navbar-nav nav-tabs navbar-right">
                     <li><a href="registration">Register</a></li>
-                    <li><a href="bubbles">Login</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="loginmodal-container">
+                <h1>Login to Your Account</h1><br>
+                <form>
+                    <div class="right-inner-addon">
+                        <i class="glyphicon glyphicon-knight"></i>
+                        <input type="text" name="user" placeholder="Gamer Tag"/>
+                    </div>
+                    <div class="right-inner-addon">
+                        <i class="glyphicon glyphicon-sunglasses"></i>
+                    <input type="password" name="pass" placeholder="Password"/>
+                    </div>
+                    <button type="submit" name="login" class="btn btn-shutterOut">Login</button>
+                </form>
+
+                <div class="login-help">
+                    <a href="registration">Register</a> - <a href="#">Forgot Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
 }
 
