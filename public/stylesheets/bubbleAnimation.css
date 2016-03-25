@@ -106,5 +106,6 @@
     100% {
         -webkit-transform: translateY(-1080px) rotate(630deg);
         transform: translateY(-1200px) rotate(1200deg);
+
     }
 }
