@@ -10,17 +10,16 @@
 * argument is an `Html` object containing the body of the page.
 *@
 @main("Welcome to Play") {
+  @bubbles("")
+  @index("")
   <div class="wideBackground">
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="col-sm-1">
-        @index("")
-        </div>
-        <div class="col-sm-11">
+    <div class="container">
+        <div class="col-sm-offset-1 col-sm-10 col-sm-offset-1">
+          <h2 class="row header container-fluid">Player Profile</h2>
           <div class="pBackground">
             <div class="container-fluid">
                 <!--Adds style color to "Player Profile"-->
-              <h2 class="row header container-fluid">Player Profile</h2>
+              <h2 class="row header container-fluid"><br></h2>
 
               <section class="row container-fluid">
                   <!-- Fetches and displays the player profile image -->
@@ -100,6 +99,6 @@
         </div>
       </div>
     </div>
-  </div>
+
 
 }

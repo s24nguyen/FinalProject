@@ -1,52 +1,47 @@
 @(message: String)
 
 @main("Contact Us") {
+  @bubbles("")
+  @index("")
   <div class="wideBackground">
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="col-sm-1">
-        @index("")
-        </div>
-        <div class="col-sm-offset-2 col-sm-6 col-sm-offset-3">
+    <div class="container">
+      <div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+          <div class="col-sm-offset-4">
+            <div class="contactHeader">
+              <h1>Contact Us</h1>
+            </div>
+          </div>
+          <br>
+          <div class="col-sm-12">
+            <div id="contactInfo"> 
 
-            <div class="contact">
-              <div class="col-sm-offset-3 col-sm-10">
-                <div class="contactHeader">
-                <h1>Contact Us</h1>
-                </div>
-              </div>
-              <br>
-              <div class="col-sm-10">
-                <div id="contactInfo"> 
-                  <div id="disclaimer">
-                    <h4>Before contacting us with questions, please check
-                      FAQs, located on the sidebar.  Many questions have
-                      already been answered there.</h4>
-                  </div>
-                </div>
-                <div id="leftInfo">     
-                  <div id="phone">
-                    <h2><span style="color:#62488A">Contact By Phone</span></h2>
-                    <h4>I'm not sure if this is a good idea,
-                      but I decided to leave this section here
-                      as a placeholder</h4>
-                  </div>     
-                </div> 
-                <div id="rightInfo">     
-                  <div id="email">
-                    <h2><span style="color:#62488A">Contact By E-mail</span><br></h2>
-                    <h4>Please e-mail your question, comments,
-                      or suggestions to: <br>
-                      eahoggar&#64oakland.edu <br>
-                      ...</h4>
-                  </div>     
-                </div>
-              </div>
+              <h4>Before contacting us with questions, please check out the
+                FAQs or About Us pages, located on the menu. Many questions have
+                already been answered there!</h4>
             </div>
           </div>
         </div>
       </div>
+      <div class="contact">
+        <div id="leftInfo">     
+          <div id="phone">
+            <h2><span style="color:#62488A">Contact By Phone</span></h2><br/>
+            <h4>You can reach us through phone on the following days...<br/><br/>
+              Monday-Friday <br/> 10:00 AM - 11:00 AM <br/><br/> <b>482-567-4445</b></h4>
+          </div>     
+        </div> 
+        <div id="rightInfo">     
+          <div id="email">
+            <h2><span style="color:#62488A">Contact By E-mail</span><br></h2><br/>
+            <h4>Please e-mail your question, comments,
+              or suggestions to: <br><br/>
+              eahoggar&#64oakland.edu <br>
+              ...</h4>
+          </div>     
+        </div>
+      </div>
     </div>
+
 
 
 }

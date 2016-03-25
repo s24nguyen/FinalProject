@@ -10,51 +10,46 @@
  * argument is an `Html` object containing the body of the page.
  *@
 @main("Welcome to Play") {
+    @bubbles("")
+    @index("")
     <div class="wideBackground">
-        <div class="container-fluid">
-            <div class="row-fluid">
-                <div class="col-sm-1">
-                @index("")
-                </div>
-                <div class="col-sm-offset-2 col-sm-6 col-sm-offset-3">
-                    <div class="container">
-                        <div class="registration">
-                            <div class="row">
-                                <div class=" col-sm-offset-1 col-sm-10">
-                                    <h1>FAQ</h1>
-                                </div>
-                            </div>
-
-
-                                <div class="row">
-                                    <div class=" col-sm-offset-1 col-sm-10">
-                                        <div class="header">
-                                            <h2>Q: Won’t separating players by state make the end results of the tournament biased? </h2>
-                                        </div>
-                                        <br>
-                                        <div class="col-sm-10">
-                                            <h4>A: No. Pools are already seeded by player skill. With each player in a pool being ranked 1 - n before hand. You are able to freely swap players between pools as long as you only have one of each rank in a pool. By doing this our system maintains the fairness of the tournament while allowing the TO to optimize the pools.</h4>
-                                        </div>
-                                    </div>
-                                        <br>
-                                        <br>
-                                        <div class="col-sm-offset-1 col-sm-10">
-                                            <div class="header">
-                                                <h2>Q: What if the algorithm doesn’t work? Will there be enough of a project besides the algorithm?</h2>
-                                            </div>
-                                            <br>
-                                            <div class="col-sm-10">
-                                                <h4>A: We already have an algorithm worked out and sample code written that proves the concept. Even without the algorithm, the product is feature rich and useful. There is a need for a tool that helps set up and manage a round-robin tournament, and this is that solution.</h4>
-                                            </div>
-                                        </div>
-
-                                </div>
-
-
+        <div class="container">
+            <div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+                    <div class="row mainText">
+                        <div class="col-sm-9">
+                            <h1>FAQs</h1>
                         </div>
                     </div>
+
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="header">
+                                <h2>Q: Won’t separating players by state make the end results of the tournament biased? </h2>
+                            </div>
+                            <br>
+                            <div class="col-sm-12 mainText">
+                                <h4>A: No. Pools are already seeded by player skill. With each player in a pool being ranked 1 - n before hand. You are able to freely swap players between pools as long as you only have one of each rank in a pool. By doing this our system maintains the fairness of the tournament while allowing the TO to optimize the pools.</h4>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-sm-12">
+                            <div class="header">
+                                <h2>Q: What if the algorithm doesn’t work? Will there be enough of a project besides the algorithm?</h2>
+                            </div>
+                            <br>
+                            <div class="col-sm-12 mainText">
+                                <h4>A: We already have an algorithm worked out and sample code written that proves the concept. Even without the algorithm, the product is feature rich and useful. There is a need for a tool that helps set up and manage a round-robin tournament, and this is that solution.</h4>
+                            </div>
+                        </div>
+
+                    </div>
+
+
                 </div>
             </div>
         </div>
-    </div>
+
+
 }

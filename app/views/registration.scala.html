@@ -10,37 +10,35 @@
  * argument is an `Html` object containing the body of the page.
  *@
 @main("Welcome to Play") {
+    @bubbles("")
+    @index("")
     <div class="wideBackground">
-        <div class="container-fluid">
-            <div class="row-fluid">
-                <div class="col-sm-1">
-                @index("")
-                </div>
+        <div class="container">
                 <div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
-                    <div class="container">
+
                         <div class="registration">
                             <div class="row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-12">
                                     <h1>Register to Play!</h1>
                                 </div>
                             </div>
                             <br>
                             <form class="form">
                                 <div class="row">
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-6">
                                         <input type="text" class="form-control" id="fName" placeholder="First Name">
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-6">
                                         <input type="text" class="form-control" id="lName" placeholder="Last Name">
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-5">
                                         <input type="text" class="form-control" id="gameTag" placeholder="Gamer Tag">
                                     </div>
                                     <div class="radButtons">
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-7">
                                             <label class="radio-inline">
                                                 <input type="radio" name="systemOpt" id="radPS" value="syst1"> Playstation
                                             </label>
@@ -58,10 +56,10 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-1">
+                                    <div class="col-sm-2">
                                         <label>Date of Birth</label>
                                     </div>
-                                    <div class="col-sm-2">
+                                    <div class="col-sm-4">
                                         <select class="form-control" name="month" id="dobMonth">
                                             <option value="" disabled selected>Month</option>
                                             <option value="01">January</option>
@@ -78,7 +76,7 @@
                                             <option value="12">December</option>
                                         </select>
                                     </div>
-                                    <div class="col-sm-1">
+                                    <div class="col-sm-2">
                                         <select class="form-control" name="day" id="dobDay">
                                             <option value="" disabled selected>Day</option>
                                             <option value="01">01</option>
@@ -114,7 +112,7 @@
                                             <option value="31">31</option>
                                         </select>
                                     </div>
-                                    <div class="col-sm-2">
+                                    <div class="col-sm-4">
                                         <select class="form-control" name="year" id="year">
                                             <option value="" disabled selected>Year</option>
                                             <script>
@@ -129,13 +127,13 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-2">
+                                    <div class="col-sm-4">
                                         <input type="text" class="form-control" id="address" placeholder="Address">
                                     </div>
-                                    <div class="col-sm-2">
+                                    <div class="col-sm-4">
                                         <input type="text" class="form-control" id="city" placeholder="City">
                                     </div>
-                                    <div class="col-sm-2">
+                                    <div class="col-sm-4">
                                         <select class="form-control" name="state" id="state">
                                             <option value="" disabled selected>State</option>
                                             <option value="AL">Alabama</option>
@@ -194,25 +192,25 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-12">
                                         <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-6">
                                         <input type="password" class="form-control" id="pWord" placeholder="Password">
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-6">
                                         <input type="password" class="form-control" id="pWordConfirm" placeholder="Re-type Password">
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-6">
                                         <button type="submit" class="btn btn-shutterOut col-sm-12" name="submit" id="button-submit">Submit</button>
                                     </div>
 
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-6">
                                         <button type="submit" class="btn btn-shutterOut col-sm-12" name="cancel" id="button-cancel">Cancel</button>
                                     </div>
                                 </div>

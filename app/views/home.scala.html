@@ -10,25 +10,20 @@
  * argument is an `Html` object containing the body of the page.
  *@
 @main("Welcome to Play") {
-
-
+    @bubbles("")
+    @index("")
     <div class="wideBackground">
-        <div class="container-fluid">
-            <div class="row-fluid">
-                <div class="col-sm-1">
-                @index("")
-                </div>
-                <div class="col-sm-offset-2 col-sm-6 col-sm-offset-3">
-                        <div class="home">
-                            <div class="jumbotron">
-                                <h1>Welcome!</h1>
-                                <p>...to Round Robin. If you're new, try our <a href="/about">about</a> page. Otherwise, you can check out <a href="/registration">registration</a> or our <a href="/playerProfile">player profiles</a>. If you have any questions, please consult our <a href="/faq">FAQ</a> first.</p>
-                            </div>
-                        </div>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+                <div class="home">
+                    <div class="jumbotron">
+                        <h1>Welcome!</h1>
+                        <p>...to Round Robin. If you're new, try our <a href="/about">about</a> page. Otherwise, you can check out <a href="/registration">registration</a> or our <a href="/playerProfile">player profiles</a>. If you have any questions, please consult our <a href="/faq">FAQ</a> first.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
+    </div>
 }
