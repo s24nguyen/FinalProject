@@ -2,7 +2,7 @@ package controllers;
 
 import com.avaje.ebean.Ebean;
 import com.fasterxml.jackson.databind.JsonNode;
-import org.h2.engine.User;
+//import org.h2.engine.User;
 import play.data.*;
 import play.data.validation.Constraints;
 import play.mvc.*;
@@ -13,8 +13,7 @@ import java.util.List;
 
 
 public class UserController extends Controller {
-    @Inject
-    FormFactory formFactory;
+    @Inject FormFactory formFactory;
 
     public Result register() {
         User user = Json.fromJson(request().body().asJson(), User.class);
@@ -34,9 +33,9 @@ public class UserController extends Controller {
             JsonNode node = form.errorsAsJson(); // Get errors
             User error = new User();
             if (form.error("first_name") != null)
-                error.firstName = node.get("first_name").get(0).asText();
+                error.first_name = node.get("first_name").get(0).asText();
             if (form.error("last_name") != null)
-                error.lastName = node.get("last_name").get(0).asText();
+                error.last_name = node.get("last_name").get(0).asText();
             return Json.toJson(error);
         }
         return null;
