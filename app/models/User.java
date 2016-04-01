@@ -12,27 +12,25 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
-/**
- * Created by Youmin on 3/30/16.
- */
+
 @Entity
 public class User extends Model{
     @Id
     @GeneratedValue
-    private Long id;
+    public Long id;
 
     @Constraints.Required
-    private String first_name;
+    public String first_name;
 
     @Constraints.Required
-    private String last_name;
+    public String last_name;
 
     @Constraints.Required
     @Constraints.Email
-    private String email;
+    public String email;
 
     @Constraints.Required
-    private String password;
+    public String password;
 
     public String getToken() {
         return token;
@@ -48,7 +46,7 @@ public class User extends Model{
         return password;
     }
     public void setPassword(String password) {
-        this.password = User.getSha512(password);
+        this.password = User.getSha256(password);
     }
 
     public Long getId() {
@@ -103,7 +101,7 @@ public class User extends Model{
      * @param filter   Filter applied on the name column
      */
     public static PagedList<User> page(int page, int pageSize, String sortBy,
-                                       String order, String filter) {
+                                  String order, String filter) {
         return Ebean.find(User.class)
                 .where()
                 .ilike("first_name", "%" + filter + "%")
@@ -118,7 +116,7 @@ public class User extends Model{
     }
 
     public void setConfirm_password(String confirm_password) {
-        this.confirm_password = User.getSha512(confirm_password);
+        this.confirm_password = User.getSha256(confirm_password);
     }
 
     // Transient field
@@ -126,7 +124,7 @@ public class User extends Model{
     String confirm_password;
 
     // Get SHA password
-    public static String getSha512(String input) {
+    public static String getSha256(String input) {
         MessageDigest mDigest = null;
         try {
             mDigest = MessageDigest.getInstance("SHA-256");
