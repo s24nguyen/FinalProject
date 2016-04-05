@@ -61,7 +61,7 @@ public class UserController extends Controller {
         if(existingUser != null)
         {
             User error = new User();
-            error.setEmail("This email is already in use. Click forgot password, if you like to recover");
+            error.setEmail("Uh-oh looks like this email is already taken. Sorry pal.");
             return Json.toJson(error);
         }
 
