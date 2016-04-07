@@ -46,6 +46,20 @@ public class UserController extends Controller {
                 error.setEmail( node.get("email").get(0).asText() );
             if(form.error("password") != null)
                 error.setPassword(node.get("password").get(0).asText());
+            if(form.error("gamerTag") != null)
+                error.setGamerTag( node.get("gamerTag").get(0).asText() );
+            if(form.error("dobMonth") != null)
+                error.setDobMonth( node.get("dobMonth").get(0).asText() );
+            if(form.error("dobDay") != null)
+                error.setDobDay( node.get("dobDay").get(0).asText() );
+            if(form.error("dobYear") != null)
+                error.setDobYear( node.get("dobYear").get(0).asText() );
+            if(form.error("address") != null)
+                error.setAddress( node.get("address").get(0).asText() );
+            if(form.error("city") != null)
+                error.setCity( node.get("city").get(0).asText() );
+            if(form.error("state") != null)
+                error.setState( node.get("state").get(0).asText() );
             return Json.toJson(error);
         }
         User user = form.get();
@@ -107,7 +121,7 @@ public class UserController extends Controller {
         // 1. Define class to send JSON response back
         class Login {
             public Long     id;
-            public String email;
+            public String gamerTag;
             public String token;
 
             public Login() {
@@ -116,12 +130,12 @@ public class UserController extends Controller {
 
         // 2. Read email and password from request()
         JsonNode request = request().body().asJson();
-        String email = request.get("email").asText();
+        String gamerTag = request.get("gamerTag").asText();
         String password = request.get("password").asText();
 
-        // 3. Find user with given email
+        // 3. Find user with given gamerTag
         Login ret = new Login();
-        User user = User.findByEmail(email);
+        User user = User.gamerTagLogin(gamerTag);
         if (user == null) {
             return unauthorized(Json.toJson(ret));
         }
@@ -133,7 +147,7 @@ public class UserController extends Controller {
             user.setToken(authToken);
             Ebean.update(user);
             ret.token = authToken;
-            ret.email = user.getEmail();
+            ret.gamerTag = user.getEmail();
             ret.id = user.getId();
             return ok(Json.toJson(ret));
 

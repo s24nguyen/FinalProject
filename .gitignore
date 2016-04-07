@@ -1,3 +1,4 @@
+
 logs
 target
 /.idea
@@ -6,3 +7,6 @@ target
 /.project
 /.settings
 /RUNNING_PID
+/.idea/*
+
+

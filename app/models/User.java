@@ -19,67 +19,139 @@ public class User extends Model{
     @GeneratedValue
     public Long id;
 
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     @Constraints.Required
     public String first_name;
 
+    public String getFirst_name() {
+        return first_name;
+    }
+    public void setFirst_name(String first_name) {
+        this.first_name = first_name;
+    }
+
     @Constraints.Required
     public String last_name;
+    public String getLast_name() {
+        return last_name;
+    }
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
+    }
+
+    @Constraints.Required
+    public String gamerTag;
+    public String getGamerTag() {
+        return gamerTag;
+    }
+    public void setGamerTag(String gamerTag) {
+        this.gamerTag = gamerTag;
+    }
+
+    @Constraints.Required
+    public String dobMonth;
+
+    public String getDobMonth() {
+        return dobMonth;
+    }
+    public void setDobMonth(String dobMonth) {
+        this.dobMonth = dobMonth;
+    }
+
+    @Constraints.Required
+    public String dobDay;
+
+    public String getDobDay() {
+        return dobDay;
+    }
+    public void setDobDay(String dobDay) {
+        this.dobDay = dobDay;
+    }
+
+    @Constraints.Required
+    public String dobYear;
+
+    public String getDobYear() {
+        return dobYear;
+    }
+    public void setDobYear(String dobYear) {
+        this.dobYear = dobYear;
+    }
+
+    @Constraints.Required
+    public String address;
+
+    public String getAddress() {
+        return address;
+    }
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    @Constraints.Required
+    public String city;
+
+    public String getCity() {
+        return city;
+    }
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    @Constraints.Required
+    public String state;
+
+    public String getState() {
+        return state;
+    }
+    public void setState(String state) {
+        this.state = state;
+    }
 
     @Constraints.Required
     @Constraints.Email
     public String email;
 
+    public String getEmail()
+    {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Constraints.Required
     public String password;
-
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
-    }
-
-    private String token;
 
     public String getPassword() {
         return password;
     }
-    public void setPassword(String password) {
+    public void setPassword(String password)
+    {
         this.password = User.getSha256(password);
     }
 
-    public Long getId() {
-        return id;
+
+    private String token;
+    public String getToken() {
+        return token;
+    }
+    public void setToken(String token) {
+        this.token = token;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
-    public String getFirst_name() {
-        return first_name;
-    }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
-    }
 
-    public String getLast_name() {
-        return last_name;
-    }
 
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
-    }
 
-    public String getEmail() {
-        return email;
-    }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
     // Methods
     //public static Finder<Long,User> find = new Finder<>(Long.class, User.class);
 
@@ -90,6 +162,15 @@ public class User extends Model{
                 .like("email", email)
                 .findUnique();
     }
+
+    public static User gamerTagLogin(String gamerTag)
+    {
+        return Ebean.find(User.class)
+                .where()
+                .like("gamerTag", gamerTag)
+                .findUnique();
+    }
+
 
     /**
      * Return a page of computer
