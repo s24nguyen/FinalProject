@@ -1,6 +1,8 @@
 package controllers;
 
 import com.avaje.ebean.Ebean;
+import com.avaje.ebean.Expr;
+import com.avaje.ebean.text.json.JsonContext;
 import com.fasterxml.jackson.databind.JsonNode;
 import play.data.Form;
 import play.data.FormFactory;
@@ -175,4 +177,20 @@ public class UserController extends Controller {
         return unauthorized();
     }
 
+
+    public Result search(String search_string) {
+        List<User> users = null;
+        String[] tokens = search_string.split(" ");
+        if(search_string == "")
+            users = Ebean.find(User.class).select("gamerTag").findList();
+        else
+            users = Ebean.find(User.class)
+                    .select("gamerTag")
+                    .where(
+                            Expr.in("gamerTag", tokens)
+                    )
+                    .findList();
+        JsonContext jc = Ebean.json();
+        return ok(jc.toJson(users));
+    }
 }
