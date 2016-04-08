@@ -8,6 +8,7 @@ create table user (
   first_name                    varchar(255),
   last_name                     varchar(255),
   gamer_tag                     varchar(255),
+  platform                      varchar(255),
   dob_month                     varchar(255),
   dob_day                       varchar(255),
   dob_year                      varchar(255),
