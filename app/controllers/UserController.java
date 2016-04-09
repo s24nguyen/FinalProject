@@ -63,8 +63,8 @@ public class UserController extends Controller {
                 error.setCity( node.get("city").get(0).asText() );
             if(form.error("state") != null)
                 error.setState( node.get("state").get(0).asText() );
-//            if(form.error("platform") != null)
-//                error.setPlatform( node.get("platform").get(0).asText() );
+            if(form.error("platform") != null)
+                error.setPlatform( node.get("platform").get(0).asText() );
             return Json.toJson(error);
         }
         User user = form.get();

@@ -55,16 +55,16 @@ public class User extends Model{
     }
 
     @Constraints.Required
-//    public String platform;
-//
-//    public String getPlatform() {
-//        return platform;
-//    }
-//    public void setPlatform(String platform) {
-//        this.platform = platform;
-//    }
-//
-//    @Constraints.Required
+    public String platform;
+
+    public String getPlatform() {
+        return platform;
+    }
+    public void setPlatform(String platform) {
+        this.platform = platform;
+    }
+
+    @Constraints.Required
     public String dobMonth;
 
     public String getDobMonth() {
