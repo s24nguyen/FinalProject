@@ -21,8 +21,9 @@ public class UserController extends Controller {
     @Inject FormFactory formFactory;
     public Result register(){
         User user = Json.fromJson(request().body().asJson(), User.class);
-        if(user == null)
+        if(user == null) {
             return badRequest();
+        }
         Form<User> form = formFactory.form(User.class).bindFromRequest();
 
         // Check form errors
@@ -62,6 +63,8 @@ public class UserController extends Controller {
                 error.setCity( node.get("city").get(0).asText() );
             if(form.error("state") != null)
                 error.setState( node.get("state").get(0).asText() );
+//            if(form.error("platform") != null)
+//                error.setPlatform( node.get("platform").get(0).asText() );
             return Json.toJson(error);
         }
         User user = form.get();
