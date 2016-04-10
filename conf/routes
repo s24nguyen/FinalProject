@@ -17,6 +17,6 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 # Professional Services API
 POST    /api/register               controllers.UserController.register
 POST    /api/header                 controllers.UserController.authenticate
+POST    /api/playerprofile          controllers.UserController.authenticate
 GET     /api/logout                 controllers.UserController.logout(id:Long)
-
-GET     /api/searchPlayers            controllers.UserController.search(search_string:String)
+GET     /api/searchPlayers          controllers.UserController.search(search_string:String)
