@@ -2,6 +2,8 @@ package models;
 
 import com.avaje.ebean.*;
 import play.data.validation.Constraints;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import play.*;
 
 import javax.annotation.Generated;
@@ -195,6 +197,13 @@ public class User extends Model{
 
 
 
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "owner", cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private List<Tournament> tournaments;
+
+    public List<Tournament> getTournaments() {
+        return tournaments;
+    }
 
 
 

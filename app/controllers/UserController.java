@@ -224,4 +224,38 @@ public class UserController extends Controller {
         return ok(jc.toJson(user));
     }
 
+    public Result editProfile(){
+        User user = Json.fromJson(request().body().asJson(), User.class);
+        if(user == null) {
+            return badRequest();
+        }
+//        Form<User> form = formFactory.form(User.class).bindFromRequest();
+        User currUser = Ebean.find(User.class)
+                .where()
+                .eq("id", user.id)
+                .findUnique();
+        if(user.gameTeam != null)
+            currUser.setGameTeam(user.gameTeam);
+        if(user.favGame != null)
+            currUser.setFavGame(user.favGame);
+        if (user.playerBio != null)
+            currUser.setPlayerBio(user.playerBio);
+        if (user.email != null)
+            currUser.setEmail(user.email);
+        if (user.state != null)
+            currUser.setState(user.state);
+        if (user.icon_URL != null)
+            currUser.setIcon_URL(user.icon_URL);
+        // Check form errors
+//        JsonNode node = validateUser(form);
+//        if(node != null)
+//            return badRequest(Json.toJson(node));
+
+        // Save the entry
+
+        Ebean.save(currUser);
+        JsonContext jc = Ebean.json();
+        return ok(jc.toJson(user));
+    }
+
 }

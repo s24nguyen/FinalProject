@@ -17,8 +17,10 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 # Professional Services API
 POST    /api/register               controllers.UserController.register
 POST    /api/header                 controllers.UserController.authenticate
+POST    /api/editProfile            controllers.UserController.editProfile
 
 GET     /api/mainlogin              controllers.UserController.authenticate
 GET     /api/logout                 controllers.UserController.logout(id:Long)
 GET     /api/searchPlayers          controllers.UserController.search(search_string:String)
 GET     /api/getProfile             controllers.UserController.getProfile(search_string:String)
+
