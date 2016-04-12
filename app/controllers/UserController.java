@@ -84,6 +84,15 @@ public class UserController extends Controller {
             return Json.toJson(error);
         }
 
+        // Check for unique gamerTag
+        User existingGamerTag = User.gamerTagLogin(user.getGamerTag());
+        if(existingGamerTag != null)
+        {
+            User error = new User();
+            error.setGamerTag("This Gamer Tag is already taken");
+            return Json.toJson(error);
+        }
+
         return null;
     }
 
@@ -152,7 +161,7 @@ public class UserController extends Controller {
             user.setToken(authToken);
             Ebean.update(user);
             ret.token = authToken;
-            ret.gamerTag = user.getEmail();
+            ret.gamerTag = user.getGamerTag();
             ret.id = user.getId();
             return ok(Json.toJson(ret));
 
@@ -185,12 +194,15 @@ public class UserController extends Controller {
         List<User> users = null;
         String[] tokens = search_string.split(" ");
         if(search_string == "")
-            users = Ebean.find(User.class).select("gamerTag").findList();
+            users = Ebean.find(User.class).select("gamerTag, first_name").findList();
         else
             users = Ebean.find(User.class)
-                    .select("gamerTag")
-                    .where(
-                            Expr.in("gamerTag", tokens)
+                    .select("gamerTag, first_name")
+                    .where()
+                    .or(
+                            Expr.in("gamerTag", tokens),
+                            Expr.in("first_name", tokens)
+
                     )
                     .findList();
         JsonContext jc = Ebean.json();

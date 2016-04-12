@@ -148,6 +148,43 @@ public class User extends Model{
     }
 
 
+    public String icon_URL;
+
+    public String getIcon_URL() {
+        return icon_URL;
+    }
+    public void setIcon_URL(String icon_URL) {
+        this.icon_URL = icon_URL;
+    }
+
+    public String favGame;
+
+    public String getFavGame() {
+        return favGame;
+    }
+    public void setFavGame(String favGame) {
+        this.favGame = favGame;
+    }
+
+    public String gameTeam;
+
+    public String getGameTeam() {
+        return gameTeam;
+    }
+    public void setGameTeam(String gameTeam) {
+        this.gameTeam = gameTeam;
+    }
+
+
+    public String playerBio;
+
+    public String getPlayerBio() {
+        return playerBio;
+    }
+    public void setPlayerBio(String playerBio) {
+        this.playerBio = playerBio;
+    }
+
     private String token;
     public String getToken() {
         return token;
