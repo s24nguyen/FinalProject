@@ -21,3 +21,4 @@ POST    /api/header                 controllers.UserController.authenticate
 GET     /api/mainlogin              controllers.UserController.authenticate
 GET     /api/logout                 controllers.UserController.logout(id:Long)
 GET     /api/searchPlayers          controllers.UserController.search(search_string:String)
+GET     /api/getProfile             controllers.UserController.getProfile(search_string:String)

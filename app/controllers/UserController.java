@@ -197,7 +197,7 @@ public class UserController extends Controller {
             users = Ebean.find(User.class).select("gamerTag, first_name").findList();
         else
             users = Ebean.find(User.class)
-                    .select("gamerTag, first_name")
+                    .select("gamerTag, first_name,last_name,gamerTag,platform,dobMonth,dobDay,dobYear,address,city,state,icon_URL,favGame,gameTeam,playerBio")
                     .where()
                     .or(
                             Expr.in("gamerTag", tokens),
@@ -208,4 +208,20 @@ public class UserController extends Controller {
         JsonContext jc = Ebean.json();
         return ok(jc.toJson(users));
     }
+
+
+    public Result getProfile(String search_string) {
+        User user = null;
+        if(search_string == "")
+            user = Ebean.find(User.class).select("gamerTag").findUnique();
+        else
+            user = Ebean.find(User.class)
+                    .select("gamerTag, first_name,last_name,gamerTag,platform,dobMonth,dobDay,dobYear,address,city,state,icon_URL,favGame,gameTeam,playerBio")
+                    .where()
+                    .eq("gamerTag", search_string)
+                    .findUnique();
+        JsonContext jc = Ebean.json();
+        return ok(jc.toJson(user));
+    }
+
 }
