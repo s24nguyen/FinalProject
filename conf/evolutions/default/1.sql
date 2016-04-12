@@ -17,6 +17,10 @@ create table user (
   state                         varchar(255),
   email                         varchar(255),
   password                      varchar(255),
+  icon_url                      varchar(255),
+  fav_game                      varchar(255),
+  game_team                     varchar(255),
+  player_bio                    varchar(255),
   token                         varchar(255),
   constraint pk_user primary key (id)
 );
