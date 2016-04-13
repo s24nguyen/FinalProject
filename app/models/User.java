@@ -177,7 +177,7 @@ public class User extends Model{
         this.gameTeam = gameTeam;
     }
 
-
+    @Column(length = 156456)
     public String playerBio;
 
     public String getPlayerBio() {
@@ -275,5 +275,6 @@ public class User extends Model{
         }
         return sb.toString();
     }
+
 
 }
