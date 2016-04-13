@@ -65,3 +65,54 @@ select t0.id c0, t0.first_name c1, t0.last_name c2, t0.email c3, t0.password c4,
 2016-04-01 00:10:40 jdbc[4]: exception
 org.h2.jdbc.JdbcSQLException: Table "PLAY_EVOLUTIONS" not found; SQL statement:
 select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%' [42102-191]
+2016-04-12 21:18:39 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "STRINGDECODE('Hello I am Steven Nguyen and I am a student at Oakland University. I am an IT major and blah blah blah vlah \nHell... (543)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:18:43 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "STRINGDECODE('Hello I am Steven Nguyen and I am a student at Oakland University. I am an IT major and blah blah blah vlah \nHell... (543)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:18:51 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "STRINGDECODE('Hello I am Steven Nguyen and I am a student at Oakland University. I am an IT major and blah blah blah vlah \nHell... (295)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:18:53 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "STRINGDECODE('Hello I am Steven Nguyen and I am a student at Oakland University. I am an IT major and blah blah blah vlah \nHell... (295)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:19:34 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'alkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhl... (420)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:19:34 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'alkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhlakjsfalkdfhl... (420)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:21:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'akhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfa... (828)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:21:15 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'akhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfa... (828)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:21:16 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'akhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfa... (828)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:21:16 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'akhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfa... (828)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:21:24 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'akhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfakhfdljaskhfljkdsfa... (828)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:27:11 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'steven is the best! steven is the best! steven is the best! steven is the best! steven is the best! steven is the best! steven ... (519)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:27:12 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'steven is the best! steven is the best! steven is the best! steven is the best! steven is the best! steven is the best! steven ... (519)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:27:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'steven is the best! steven is the best! steven is the best! steven is the best! steven is the best! steven is the best! steven ... (519)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:27:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'steven is the best! steven is the best! steven is the best! steven is the best! steven is the best! steven is the best! steven ... (519)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:27:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'steven is the best! steven is the best! steven is the best! steven is the best! steven is the best! steven is the best! steven ... (519)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 21:27:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'steven is the best! steven is the best! steven is the best! steven is the best! steven is the best! steven is the best! steven ... (519)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
