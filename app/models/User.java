@@ -205,6 +205,10 @@ public class User extends Model{
         return tournaments;
     }
 
+    public void setTournaments(List<Tournament> tournaments) {
+        this.tournaments = tournaments;
+    }
+
 
 
 
@@ -275,5 +279,6 @@ public class User extends Model{
         }
         return sb.toString();
     }
+
 
 }

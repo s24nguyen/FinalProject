@@ -26,10 +26,11 @@ public class Tournament extends Model {
     public String game;
     public String location;
     public String date;
-    public String tOrganizer;
     public String platform;
     public String tournamentDetail;
     public String tournamentPicture;
+    public User tOrganizer;
+
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JsonBackReference
@@ -83,11 +84,11 @@ public class Tournament extends Model {
         this.date = date;
     }
 
-    public String gettOrganizer() {
+    public User gettOrganizer() {
         return tOrganizer;
     }
 
-    public void settOrganizer(String tOrganizer) {
+    public void settOrganizer(User tOrganizer) {
         this.tOrganizer = tOrganizer;
     }
 
@@ -113,5 +114,17 @@ public class Tournament extends Model {
 
     public void setTournamentPicture(String tournamentPicture) {
         this.tournamentPicture = tournamentPicture;
+    }
+
+    public User getOwner() {
+        return owner;
+    }
+
+    public void setOwner(User owner) {
+        this.owner = owner;
+    }
+
+    public void setPools(List<Pool> pools) {
+        this.pools = pools;
     }
 }

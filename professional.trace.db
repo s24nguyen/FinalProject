@@ -65,3 +65,63 @@ select t0.id c0, t0.first_name c1, t0.last_name c2, t0.email c3, t0.password c4,
 2016-04-01 00:10:40 jdbc[4]: exception
 org.h2.jdbc.JdbcSQLException: Table "PLAY_EVOLUTIONS" not found; SQL statement:
 select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%' [42102-191]
+2016-04-12 14:43:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "STRINGDECODE('Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);... (831)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:43:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "STRINGDECODE('Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);... (831)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:43:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "STRINGDECODE('Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);... (831)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:43:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "STRINGDECODE('Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);... (831)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:43:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "STRINGDECODE('Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);... (831)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:43:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "STRINGDECODE('Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);... (831)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:43:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "STRINGDECODE('Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);\n        Ebean.save(currUser);... (831)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:46:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'http://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://... (456)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:46:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'http://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://... (456)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:46:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'http://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://... (456)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:46:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'http://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://... (456)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:46:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'http://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://... (456)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:46:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'http://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://... (456)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:46:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'http://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://... (325)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:48:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'http://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://... (1992)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 14:48:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'http://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://imgur.com/DiU9KQOhttp://... (1992)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 15:41:34 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG G... (311)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 15:41:39 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "'GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG GG G... (263)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 15:42:19 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "STRINGDECODE('ember 2nd, 2013, Bjergsen left NiP to move to NA and join the Team SoloMid starting lineup as their mid laner,-->\... (661)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]
+2016-04-12 15:42:23 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "PLAYER_BIO VARCHAR(255)": "STRINGDECODE('ember 2nd, 2013, Bjergsen left NiP to move to NA and join the Team SoloMid starting lineup as their mid laner,-->\... (273)"; SQL statement:
+update user set player_bio=? where id=? [22001-191]

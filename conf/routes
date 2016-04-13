@@ -18,9 +18,11 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 POST    /api/register               controllers.UserController.register
 POST    /api/header                 controllers.UserController.authenticate
 POST    /api/editProfile            controllers.UserController.editProfile
+POST    /api/createTournament       controllers.TournamentController.createTournament
 
 GET     /api/mainlogin              controllers.UserController.authenticate
 GET     /api/logout                 controllers.UserController.logout(id:Long)
 GET     /api/searchPlayers          controllers.UserController.search(search_string:String)
 GET     /api/getProfile             controllers.UserController.getProfile(search_string:String)
+GET     /api/getTournaments         controllers.TournamentController.getTournament(search_id:String)
 

@@ -229,7 +229,7 @@ public class UserController extends Controller {
         if(user == null) {
             return badRequest();
         }
-//        Form<User> form = formFactory.form(User.class).bindFromRequest();
+//        Form<User.java> form = formFactory.form(User.java.class).bindFromRequest();
         User currUser = Ebean.find(User.class)
                 .where()
                 .eq("id", user.id)

@@ -25,7 +25,6 @@ create table tournament (
   game                          varchar(255),
   location                      varchar(255),
   date                          varchar(255),
-  t_organizer                   varchar(255),
   platform                      varchar(255),
   tournament_detail             varchar(255),
   tournament_picture            varchar(255),
