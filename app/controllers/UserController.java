@@ -194,7 +194,7 @@ public class UserController extends Controller {
         List<User> users = null;
         String[] tokens = search_string.split(" ");
         if(search_string == "")
-            users = Ebean.find(User.class).select("gamerTag, first_name, last_name").findList();
+            users = Ebean.find(User.class).select("gamerTag, first_name, last_name, icon_URL").findList();
         else
             users = Ebean.find(User.class)
                     .select("gamerTag, first_name,last_name,gamerTag,platform,dobMonth,dobDay,dobYear,address,city,state,icon_URL,favGame,gameTeam,playerBio")
