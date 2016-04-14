@@ -51,7 +51,7 @@ create table user (
   icon_url                      varchar(255),
   fav_game                      varchar(255),
   game_team                     varchar(255),
-  player_bio                    varchar(156456),
+  player_bio                    varchar(156466),
   token                         varchar(255),
   constraint pk_user primary key (id)
 );

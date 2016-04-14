@@ -238,6 +238,8 @@ public class UserController extends Controller {
             currUser.setGameTeam(user.gameTeam);
         if(user.favGame != null)
             currUser.setFavGame(user.favGame);
+        if(user.platform != null)
+            currUser.setPlatform(user.platform);
         if (user.playerBio != null)
             currUser.setPlayerBio(user.playerBio);
         if (user.email != null)
